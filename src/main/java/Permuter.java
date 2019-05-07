@@ -22,7 +22,8 @@ public class Permuter {
         int n = string.length();
         perms = new ArrayList<String>();
         permute(string, 0, n-1);
-        for(int j = 0; j < 30; j++){
+        for(int j = 0; j < 50; j++){
+            System.out.print(j+"...");
             string = randomizeString(string);
             for(int i = 0; i<n; i++) {
                 String s1 = string.substring(i, n - 1);
